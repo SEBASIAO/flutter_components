@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_components/themes/app_theme.dart';
 
 class ListView1Screen extends StatelessWidget {
   final options = const ["Deadpool", "SpiderMan", "Thor"];
@@ -15,7 +16,10 @@ class ListView1Screen extends StatelessWidget {
           ...options
               .map((hero) => ListTile(
                     title: Text(hero),
-                    trailing: const Icon(Icons.arrow_forward_ios_outlined),
+                    trailing: const Icon(
+                      Icons.arrow_forward_ios_outlined,
+                      color: AppTheme.primaryColor,
+                    ),
                   ))
               .toList()
         ],
