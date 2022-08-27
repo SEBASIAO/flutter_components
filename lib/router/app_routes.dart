@@ -40,6 +40,16 @@ class AppRoutes {
         icon: Icons.input_rounded,
         name: "Inputs Container",
         screen: const InputsScreen()),
+    MenuOption(
+        route: "SliderScreen",
+        icon: Icons.slideshow_outlined,
+        name: "Slider Screen",
+        screen: const SliderScreen()),
+    MenuOption(
+        route: "ListViewBuilder",
+        icon: Icons.list,
+        name: "Infinite scroll and Pull to refresh",
+        screen: const ListViewBuilderScreen()),
   ];
 
   /*static Map<String, Widget Function(BuildContext)> routes = {
